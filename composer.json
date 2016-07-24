@@ -1,0 +1,23 @@
+{
+    "name": "antoniotajuelo/google-tag-manager-php",
+    "description": "Simple PHP helper functions for implementing Google Tag Manager within your website.",
+    "keywords": ["google tag manager","gtm","google analytics"],
+    "homepage": "https://github.com/antoniotajuelo/google-tag-manager-php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Antonio Tajuelo",
+            "email": "atajuelo@gmail.com",
+            "homepage": "https://www.antoniotajuelo.com/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AntonioTajuelo\\Gtm\\": "src"
+        }
+    }
+}
