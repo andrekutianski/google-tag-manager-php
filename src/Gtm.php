@@ -34,7 +34,7 @@ j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=
 
   }
 
-  public function datalayerPush($items = []) {
+  public static function datalayerPush($items = []) {
 
     if(self::$is_rendered) {
       echo '<script>dataLayer.push(' . json_encode($items,JSON_UNESCAPED_SLASHES) . ');</script>' . "\n";
@@ -44,7 +44,7 @@ j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=
 
   }
 
-  public function datalayerRemember($items) {
+  public static function datalayerRemember($items) {
 
     if(!isset($_SESSION['datalayer'])) {
       $_SESSION['datalayer'] = [];
