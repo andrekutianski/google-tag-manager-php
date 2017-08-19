@@ -40,6 +40,7 @@ Gtm::datalayerPush(['user_id' => 1]);
 - ```Gtm::renderContainer($container_id,$datalayer_items_array)```
 - ```Gtm::datalayerPush($datalayer_items_array)```
 - ```Gtm::datalayerRemember($datalayer_items_array)```
+- ```Gtm::destroyContainer()```
 
 ## ```renderContainer``` Method
 
@@ -65,3 +66,11 @@ This method is intended for collecting datalayer information in those parts of y
 
 #### Parameters
 - $datalayer_items_array (required): Array of key-value items to be added to the datalayer.
+
+## ```destroyContainer``` Method
+
+#### Description
+Destroys the Google Tag Manager container and resets the datalayer into an empty datalayer. Useful when you need to render multiple containers in the same page using different datalayer settings.
+
+#### Parameters
+- This method doesn't take any parameter.
