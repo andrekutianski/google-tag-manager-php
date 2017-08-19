@@ -54,4 +54,11 @@ j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=
 
   }
 
+  public static function destroyContainer() {
+
+    self::$datalayer = [];
+    self::$is_rendered = false;
+
+  }
+
 }
